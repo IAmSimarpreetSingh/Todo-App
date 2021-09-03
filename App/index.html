@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="todo-container">
+
+        <div class="todo-content">
+            <div class="input-group mb-3">
+                <input type="text"  class="title-input" placeholder="Tittle" id="todo-title">
+            </div>
+    
+            <div class="input-group">
+                <textarea  class="todo-desc" placeholder="Short Description" id="todo-desc"></textarea>
+            </div>
+            <div class="addTodo">
+                <button class="btn addTodoBtn" id="addTodo">Add Todo</button>
+                <button class="btn btn-primary clearTodoBtn" id="clearTodo">Clear</button>
+            </div>
+
+        </div>
+
+        <table class="table table-success table-striped todo-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date</th>
+                <th scope="col">Actions</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="todoTableContent" id="todoTable">
+              
+            </tbody>
+        </table>
+          
+    </div>
+
+    <div id="editTodo" class="hidden edit-container">
+        
+    </div>
+
+</body>
+</html>
